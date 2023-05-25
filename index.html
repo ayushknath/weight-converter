@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weight converter</title>
+  </head>
+  <body class="h-screen bg-gray-900 text-white">
+    <div
+      id="app"
+      class="h-full container mx-auto flex flex-col md:flex-row justify-evenly items-center"
+    >
+      <div>
+        <h1 class="text-4xl font-bold mb-10">Weight converter</h1>
+        <form>
+          <input
+            id="weight-input"
+            class="rounded-md px-4 py-3 md:py-4 w-full text-black text-xl"
+            type="number"
+            min="0"
+            value="0"
+            placeholder="Enter weight in kilograms"
+          />
+        </form>
+      </div>
+
+      <main>
+        <div class="flex flex-col gap-y-4 output-cards">
+          <div
+            class="w-72 h-1/3 bg-gray-800 rounded-md px-4 py-5 md:py-8 tonnes"
+          >
+            <h2 class="text-xl">Tonne: <span class="tonne-output"></span></h2>
+          </div>
+          <div
+            class="w-72 h-1/3 bg-gray-800 rounded-md px-4 py-5 md:py-8 ounces"
+          >
+            <h2 class="text-xl">Ounce: <span class="ounces-output"></span></h2>
+          </div>
+          <div
+            class="w-72 h-1/3 bg-gray-800 rounded-md px-4 py-5 md:py-8 pounds"
+          >
+            <h2 class="text-xl">Pound: <span class="pounds-output"></span></h2>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
